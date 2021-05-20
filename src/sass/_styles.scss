@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+}
+
+input {
+  height: 50px;
+  width: 300px;
+  margin-top: 1%;
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid rgb(114, 151, 250);
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.photo-card {
+  margin-bottom: 100px;
+  box-shadow: 10px 10px 8px #726d6d;
+  width: 400px;
+  display: flex;
+  position: relative;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.stats {
+  position: absolute;
+  top: 94%;
+  left: 16%;
+
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: rgb(17, 16, 16);
+}
+
+.stats-item {
+  margin: 10px;
+}
+
+.load-more {
+  margin-top: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.is-hidden {
+  display: none;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[data-action='load-more'].is-hidden {
+  display: none;
+}
+
+button[data-action='load-more'] > .spinner-grow.is-hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
