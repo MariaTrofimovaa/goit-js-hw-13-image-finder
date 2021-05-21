@@ -17,10 +17,10 @@ body {
 input {
   height: 50px;
   width: 300px;
-  margin-top: 1%;
-  display: block;
+
+  // display: block;
   font-size: 20px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid rgb(114, 151, 250);
   border-radius: 10px;
 }
@@ -33,8 +33,13 @@ input:focus {
 
 .search-form {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  align-items: flex-end;
+  position: relative;
+  transform: translate(40%, 0);
+  top: 50%;
+
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .gallery {
@@ -102,4 +107,18 @@ button[data-action='load-more'] > .spinner-grow.is-hidden {
 
 .error {
   color: red;
+}
+
+.btn-search {
+  margin-left: 10px;
+  background-color: rgb(193, 231, 233);
+  color: white;
+  border-color: rgb(175, 238, 243);
+}
+
+.btn-search:focus {
+  color: rgb(63, 155, 241);
+  outline: none;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
 }

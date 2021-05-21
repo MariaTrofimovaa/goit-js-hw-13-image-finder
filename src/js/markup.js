@@ -43,7 +43,7 @@ function renderMarkup(e) {
       makeMarkup(data);
       if (this.page > 1) {
         window.scrollTo({
-          top: 1000,
+          top: document.documentElement.offsetHeight, // это высота всего элемента. Используем вместо 1000
           behavior: 'smooth',
         });
       }
